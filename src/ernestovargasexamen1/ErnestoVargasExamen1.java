@@ -131,14 +131,12 @@ public class ErnestoVargasExamen1 {
     }
 
     public static void mostrarEstadisticas() {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Cantidad Entradas Localidad Sol Norte/Sur: " + sumarEntradas(entradasSolNorteSur));
         System.out.println("Acumulado Dinero Localidad Sol Norte/Sur: " + acumuladoSolNorteSur);
         System.out.println("Cantidad Entradas Localidad Sombra Este/Oeste: " + sumarEntradas(entradasSombraEsteOeste));
         System.out.println("Acumulado Dinero Localidad Sombra Este/Oeste: " + acumuladoSombraEsteOeste);
         System.out.println("Cantidad Entradas Localidad Preferencial: " + sumarEntradas(entradasPreferencial));
         System.out.println("Acumulado Dinero Localidad Preferencial: " + acumuladoPreferencial);
-        scanner.close();
     }
 
     public static int sumarEntradas(int[] arreglo) {
